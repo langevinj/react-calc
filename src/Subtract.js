@@ -1,9 +1,14 @@
 import React from 'react' 
-import { useParams, useHistory } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 function Subtract(){
     const { num1, num2 } = useParams();
-    const history = useHistory();
+
+    return (
+        <div>
+            <p className="result">{num1 - num2}</p>
+        </div>
+    )
 }
 
 export default Subtract;
