@@ -6,7 +6,7 @@ function Multiply() {
 
     return (
         <div>
-            <p className="result">{num1 * num2}</p>
+            <p className="result">{parseFloat(num1) * parseFloat(num2)}</p>
         </div>
     )
 }
