@@ -5,10 +5,12 @@ import Add from './Add'
 import Subtract from './Subtract'
 import Multiply from './Multiply'
 import Divide from './Divide'
+import Nav from './Nav'
 
 function Routes(){
     return(
         <BrowserRouter>
+        <Nav />
         <Switch>
             <Route exact path="/calc/add/:num1/:num2"><Add /></Route>
             <Route exact path="/calc/subtract/:num1/:num2"><Subtract /></Route>
